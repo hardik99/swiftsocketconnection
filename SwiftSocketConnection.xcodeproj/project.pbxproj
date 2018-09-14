@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		E7FCC9E8214B90DA009A6639 /* SwiftSocketConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = E7FCC9E6214B90DA009A6639 /* SwiftSocketConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E7FCC9EF214B9133009A6639 /* SwiftSocketConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FCC9EE214B9132009A6639 /* SwiftSocketConnection.swift */; };
+		E7FCC9F1214BA01E009A6639 /* SwiftSocketConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FCC9F0214BA01E009A6639 /* SwiftSocketConnection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E7FCC9E3214B90DA009A6639 /* SwiftSocketConnection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftSocketConnection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7FCC9E6214B90DA009A6639 /* SwiftSocketConnection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftSocketConnection.h; sourceTree = "<group>"; };
 		E7FCC9E7214B90DA009A6639 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E7FCC9EE214B9132009A6639 /* SwiftSocketConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSocketConnection.swift; sourceTree = "<group>"; };
+		E7FCC9F0214BA01E009A6639 /* SwiftSocketConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftSocketConnection.swift; path = Source/SwiftSocketConnection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +48,7 @@
 		E7FCC9E5214B90DA009A6639 /* SwiftSocketConnection */ = {
 			isa = PBXGroup;
 			children = (
-				E7FCC9EE214B9132009A6639 /* SwiftSocketConnection.swift */,
+				E7FCC9F0214BA01E009A6639 /* SwiftSocketConnection.swift */,
 				E7FCC9E6214B90DA009A6639 /* SwiftSocketConnection.h */,
 				E7FCC9E7214B90DA009A6639 /* Info.plist */,
 			);
@@ -134,7 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7FCC9EF214B9133009A6639 /* SwiftSocketConnection.swift in Sources */,
+				E7FCC9F1214BA01E009A6639 /* SwiftSocketConnection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

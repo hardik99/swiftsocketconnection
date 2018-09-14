@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SwiftSocketConnection'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Yazdan Swift Socket Connection framework'
 
 # This description is used to generate tags and improve search results.
@@ -29,7 +29,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.3'
   s.osx.deployment_target = '10.11'
 
-  s.ios.source_files = 'SwiftSocketConnection/*'
+  s.source_files = 'SwiftSocketConnection/Source/*'
+  s.swift_version = '3.2'
 
 
 end

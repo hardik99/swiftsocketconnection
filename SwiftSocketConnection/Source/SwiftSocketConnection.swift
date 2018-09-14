@@ -199,7 +199,7 @@ public class SocketConnection: NSObject, StreamDelegate {
         self.tries = 0
         self.wasOpened = true
         self.wasClosed = false
-        self.runAsync {
+        DispatchQueue.main.async {
             self.connected?()
         }
         if sendOnConnect {_ = self.outStream!.hasSpaceAvailable}
@@ -208,7 +208,7 @@ public class SocketConnection: NSObject, StreamDelegate {
     func _disconnected() {
         self.wasClosed = true
         self.wasOpened = false
-        self.runAsync {
+        DispatchQueue.main.async {
             if let failed = self.failed {
                 failed()
             } else {
@@ -324,19 +324,19 @@ public class SocketConnection: NSObject, StreamDelegate {
 
     private func _onMsg(_ msg: String) {
         if msg != "" {
-            self.runAsync {
+            DispatchQueue.main.async {
                 self.onMsg?(msg)
                 self.delegate?.onString(string: msg)
             }
             for (u, item) in _until {
                 _until[u] = nil
-                if (msg + "\n").contains(u) {self.runAsync {item(msg)}}
+                if (msg + "\n").contains(u) {DispatchQueue.main.async {item(msg)}}
             }
         }
     }
     
     private func _onData(_ data: Data) {
-        self.runAsync {
+        DispatchQueue.main.async {
             self.onData?(data)
         }
     }
