@@ -23,7 +23,7 @@ on your project
 add this to your Cartfile
 
 ~~~~
-github "ymazdy/CircleSlider"
+github "ymazdy/SwiftSocketConnection"
 ~~~~
 
 then 
